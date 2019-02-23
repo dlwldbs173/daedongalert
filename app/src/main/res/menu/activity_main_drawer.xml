@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group_available"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/home"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_meal"
+            android:icon="@drawable/meal"
+            android:title="급식" />
+    </group>
+    <group
+        android:id="@+id/group_preparing"
+        android:checkableBehavior="single"
+        android:enabled="false"
+        android:menuCategory="secondary">
+        <item
+            android:id="@+id/nav_notice"
+            android:icon="@drawable/notice"
+            android:title="공지사항" />
+        <item
+            android:id="@+id/nav_homework"
+            android:icon="@drawable/homework"
+            android:title="학교 숙제" />
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/timetable"
+            android:title="시간표" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar"
+            android:title="학사 일정" />
+        <item
+            android:id="@+id/nav_exam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:icon="@drawable/exam"
+            android:title="시험" />
+        <item
+            android:id="@+id/nav_movie_lecture"
+            android:icon="@drawable/movie_lecture"
+            android:title="M.net 인강" />
+    </group>
+
+</menu>
