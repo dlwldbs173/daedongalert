@@ -6,9 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.a000webhostapp.daedongalert.daedongalert.R;
 
 public class Notice extends Fragment {
+
+
+
     public static Notice newInstance() {
         return new Notice();
     }

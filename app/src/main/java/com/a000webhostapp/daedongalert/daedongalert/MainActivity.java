@@ -14,10 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.a000webhostapp.daedongalert.fragment.Calendar;
-import com.a000webhostapp.daedongalert.fragment.Homework;
-import com.a000webhostapp.daedongalert.fragment.MainFragment;
-import com.a000webhostapp.daedongalert.fragment.Notice;
+import com.a000webhostapp.daedongalert.fragment.*;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,7 +27,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -106,6 +102,8 @@ public class MainActivity extends AppCompatActivity
             FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, Calendar.newInstance()).commit();
         } else if (id == R.id.nav_meal) {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragment_container, Meal.newInstance()).commit();
 
         } else if (id == R.id.nav_exam) {
 
