@@ -85,6 +85,7 @@ public class MainFragment extends Fragment {
                 Log.d(TAG, "Meal count : "+cnt);
             }
         };
+
         Log.d(TAG, "Meal queued!");
         MealRequest mealRequest = new MealRequest(countryCode, schulCode, insttNm, schulCrseScCode,
                 schMmealScCode, schYmd, responseListener_meal);
@@ -147,5 +148,4 @@ public class MainFragment extends Fragment {
 
         return meals;
     }
-
 }
